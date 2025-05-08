@@ -1,0 +1,22 @@
+{
+  "appName": "Card details capture",
+  "oneworldLogoTitle": "Find out more about oneworld.",
+  "BillingadcpHeading":"Billing address",
+  "Billingadcpwarning":"The address should be the same as that on your card statement",
+  "BillingadcpPostcode":"Please enter a postcode",
+  "BillingadcpPostcodeLbl":"Postcode",
+  "BillingadcpAddressWarning":"Please check if your address is correct",
+  "BillingadcpLine1":"Billing address line 1",
+  "BillingadcpLine2":"Billing address line 2",
+  "BillingadcpLine3":"Billing address line 3",
+  "CountryRegion":"Country / Region",
+  "BillingadcpLine2warning":"Please enter line 2 of the billing address",
+  "BillingadcpLine1warning":"Please enter line 1 of the billing address",
+  "BillingadcpLine3warning":"Please enter line 1 of the billing address",
+  "PaymentSumcpHeading":"Payment summary",
+  "PaymentSumcpHeading1":"Payment",
+  "PaymentSumcpFlightLbl":"Total for flights",
+  "PaymentSumcpTotDue":"Total due",
+  "logoAlt":"British Airways logo.",
+  "agentStatusBasedErrMsg":"To capture card details, you need to be on an active call for capturing details via Sycurio."
+}

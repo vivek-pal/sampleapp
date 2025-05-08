@@ -1,0 +1,4 @@
+// styles/dropdownStyles.js
+// export const inputHoverStyle = "hover:outline hover:outline-2 hover:outline-offset-1 hover:outline-blue-500 focus:outline focus:outline-2 focus:outline-offset-1 focus:outline-blue-500 bg-white-white";
+export const inputHoverStyle = "hover:outline hover:outline-2 hover:outline-offset-1 hover:outline-blue-500 focus:outline focus:outline-2 focus:outline-offset-1 focus:outline-blue-500 bg-white overflow-hidden whitespace-nowrap text-ellipsis";
+export const pStyle="font-mylius-modern font-light inline-flex flex-col justify-center items-start gap-2 leading-snug font-open-sans text-base leading-6 text-midnight-blue-500";

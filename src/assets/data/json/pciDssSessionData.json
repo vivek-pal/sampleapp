@@ -1,0 +1,20 @@
+{
+    "PciDssDetails": {
+      "AgentLiveCallStatus": "TRUE",
+      "SemafoneDetails": {
+        "ClientRef": "TRUE",
+        "TenantId": "A",
+        "ClientId": 2,
+        "AccountId": 702,
+        "Principle": "CustomerWeb",
+        "LicenceCode": "Password",
+        "SemafoneMode": "MANUAL_CR",
+        "DomainURL": "https://iag.preprodsecurecontact.bt.com/semafone/service/capture/"
+      },
+      "PegasusCardDetails": {
+        "CvvData": "TRUE",
+        "ExpiryDate": "TRUE"
+      }
+    }
+  }
+  
