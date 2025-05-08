@@ -7,9 +7,10 @@ import paymentDataContext from "../../contexts/PaymentContext";
 import { getPreparePaymentData } from "../../services/paymentInterfaceAdapterService"
 import { buildPreparePaymentRequest } from "../../services/requestMapper/preparePaymentReqMapper";
 import PaymentContext from '../../contexts/PaymentContext';
+import { useUser } from '../../contexts/UserContext';
 
 const Home = () => {
-  const { user, updateUser, pegasusInputData, updatePegasusInput } = useContext(UserContext);
+  const { user, updateUser } = useUser();
   const { setPreparePaymentData } = useContext(PaymentContext)
   const navigate = useNavigate();
   const [ searchParams ] = useSearchParams();
@@ -22,6 +23,7 @@ const Home = () => {
     let entraResponse = "";
     //TODO entra API call and set data into userprofile
     const userId = "";
+    const userName = ""
     updateUser({ userId: userId, userName: userName, isLoggedIn: true })
   }
 
@@ -55,8 +57,8 @@ const Home = () => {
       // navigate("/EntraPage")
     }
     if (user.isLoggedIn) {
-      const pegasus= { token: localStorage.getItem('pegasus_token'), pnr: localStorage.getItem('pegasus_pnr')}
-      updatePegasusInput(pegasus)
+      const pegasus= { pegasus_token: localStorage.getItem('pegasus_token'), pnr: localStorage.getItem('pegasus_pnr')}
+      updateUser({pegasus: pegasus});
       callPreparepaymentService(pegasus)
     }
   }, []);
