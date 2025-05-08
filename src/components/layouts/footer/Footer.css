@@ -1,0 +1,38 @@
+footer * {
+    font-family: Helvetica, Robot, Arial, sans-serif;
+}
+
+footer {
+    background-color: #172E4D;
+    overflow: hidden;
+    padding: 2.6rem 9% 1.2rem;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+footer #footerWrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+footer #footerWrapper .footerImages {
+    margin: 2rem 0 1rem;
+    padding-top: 0.5rem;
+}
+
+footer #footerWrapper .footerImages .footerImage:first-child {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.footerImages .speedmarque {
+    height: 2rem;
+    margin-bottom: 1rem;
+    max-width: 8rem;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}

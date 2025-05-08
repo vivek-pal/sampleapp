@@ -1,0 +1,1913 @@
+{
+	"agentStatusDetails": {
+		"userID": "dptest0",
+		"genesysAgentStatus": "TRUE",
+		"agentLiveCallStatus": "TRUE",
+		"dtReturnValue": "1",
+		"agentLiveCallDetails": {
+			"connectionID": "00bb0385c7c2d030",
+			"directoryNumber": "51008",
+			"semafoneDetails": {
+				"clientRef": "ec2dd584-9f63-4ca0-8c74-31abfbcc2d34",
+				"tenantId": "A",
+				"clientId": "2",
+				"accountId": "702",
+				"principle": "CustomerWeb",
+				"licencecode": "nZm27GrPQ3K6Dibc9j4i",
+				"semafoneMode": "MANUAL_CR",
+				"domainURL": "https://iag2.securecontact.bt.com/semafone/service/capture/"
+			}
+		}
+	},
+	"paymentData": {
+		"PaymentRequest": {
+			"InterfaceVersion": "V1",
+			"Audience": "BA_Agent",
+			"AgentCredentials": {
+				"OfficeID": "NCLBA08SU",
+				"AgentID": "PW"
+			},
+			"LanguageCode": "EN",
+			"RevenueType": "REVENUE",
+			"BAEnrolmentProgramme": "Executive Club",
+			"ExecClubTier": "Blue",
+			"SaleType": "Revenue",
+			"Amount": {
+				"Cash": {
+					"Amount": "813.21"
+				}
+			},
+			"SurchargeableTransactionAmount": {
+				"Cash": {
+					"Amount": "803.21"
+				}
+			},
+			"CurrencyCode": "GBP",
+			"ThirdParty": "false",
+			"CountryOfResidence": "GB",
+			"PointOfSaleCountry": "GB",
+			"BookingTransactionType": "New",
+			"AdultTicketPrice": "803.21",
+			"ChildTicketPrice": "0.00",
+			"InfantTicketPrice": "0.00",
+			"YoungAdultTicketPrice": "0.00",
+			"Efulfillable": "true",
+			"Customers": {
+				"Customer": {
+					"AgeGroup": "Adult",
+					"CustomerName": {
+						"Title": "MRS",
+						"FirstName": "COLETTE",
+						"LastName": "ANTHON"
+					}
+				},
+				"EmailAddress": "TEST@TEST.COM"
+			},
+			"Product": [
+				{
+					"Category": "FLIGHT",
+					"Type": "FLIGHT",
+					"StartDateTime": "2023-01-11T07:20:00+00:00",
+					"EndDateTime": "2023-01-11T10:25:00+00:00",
+					"AmountInformation": {
+						"Cash": {
+							"Amount": "813.21"
+						}
+					},
+					"FlightInformation": {
+						"Direction": "OUTBOUND",
+						"CarrierCode": "BA",
+						"FlightNumber": "0478",
+						"Departure": {
+							"AirportCode": "LHR"
+						},
+						"Destination": {
+							"AirportCode": "BCN"
+						},
+						"SellingClass": "B",
+						"Cabin": {
+							"CabinCode": "M"
+						},
+						"FareBasis": "BPLM0V2B",
+						"OperatingCarrier": {
+							"OperatingCarrierCode": "BA"
+						},
+						"Flown": "false",
+						"SegmentBeingChanged": "false"
+					}
+				},
+				{
+					"Category": "FLIGHT",
+					"Type": "FLIGHT",
+					"StartDateTime": "2023-01-21T08:05:00+00:00",
+					"EndDateTime": "2023-01-21T09:45:00+00:00",
+					"FlightInformation": {
+						"Direction": "INBOUND",
+						"CarrierCode": "BA",
+						"FlightNumber": "0477",
+						"Departure": {
+							"AirportCode": "BCN"
+						},
+						"Destination": {
+							"AirportCode": "LHR"
+						},
+						"SellingClass": "B",
+						"Cabin": {
+							"CabinCode": "M"
+						},
+						"FareBasis": "BTLM0V2B",
+						"OperatingCarrier": {
+							"OperatingCarrierCode": "BA"
+						},
+						"Flown": "false",
+						"SegmentBeingChanged": "false"
+					}
+				}
+			],
+			"DisplayMessage": [
+				{
+					"MessageName": "paymentCardToAirport"
+				},
+				{
+					"MessageName": "noPaperTicket",
+					"Parameter": {
+						"ParameterName": "emailAddress",
+						"ParameterValue": "EST@TEST.COM"
+					}
+				}
+			],
+			"BillingAddress": {
+				"AddressLine1": "75 WHEATLEY DRIVE",
+				"AddressLine2": "MIRFIELD",
+				"PostalCode": "OKOK",
+				"Country": "GB"
+			},
+			"CallingApplication": "PEGPAY",
+			"BookingReference": "TMV5XC",
+			"EmailAddress": "EST@TEST.COM",
+			"EnrolmentProgrammeDetails": {
+				"MemberBalance": {
+					"Amount": "9767288",
+					"MilesType": "Avios"
+				},
+				"BAEnrolmentProgramme": "Executive Club",
+				"ExecClubTier": "Blue",
+				"MembershipNumber": "00007899"
+			},
+			"JumpOfficeID": "NCLBA0800",
+			"UniversalCustomerID": "OWVE000000015621",
+			"SaveCardSupported": "Y"
+		}
+	},
+	"pageType": "PAYMENT",
+	"preparePaymentResponse": {
+		"messageHeader": {
+			"originatingSystem": "contact_center",
+			"originatingUser": "PEGASUS",
+			"callingClient": "PEGASUS",
+			"originatingTerminal": "PEGASUS",
+			"messageCreationDate": "2025-03-21",
+			"messageCreationTime": "13:12:37.558+00:00"
+		},
+		"transactionInfo": {
+			"sessionId": "e507aa6d-d53b-4ad0-9924-1d9df37928b8",
+			"languageCode": "EN",
+			"agentCredentials": {
+				"agentId": "PW"
+			},
+			"spri": "PAY1742592141767"
+		},
+		"paymentMethods": {
+			"paymentCards": [
+				{
+					"paymentFormFields": {
+						"fields": [
+							{
+								"name": "cardNumber",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 19,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "installment",
+								"dataFormat": {
+									"minLength": 2,
+									"dataType": "STRING",
+									"isMandatory": false,
+									"maxLength": 2,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "expiryDate",
+								"dataFormat": {
+									"minLength": 4,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 4,
+									"isConcealed": false,
+									"validationPattern": "^(0[1-9]|1[0-2]){1}([0-9]{2})$"
+								}
+							},
+							{
+								"name": "CVV",
+								"dataFormat": {
+									"minLength": 4,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 4,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "approvalCodeManual",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": false,
+									"maxLength": 8,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "freeTextReportedAndPrinted",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": false,
+									"maxLength": 20,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "nameOnCard",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 99,
+									"isConcealed": false
+								}
+							}
+						]
+					},
+					"schemeOptions": [
+						{
+							"type": "Credit",
+							"usage": "Corporate",
+							"surcharge": "10.04",
+							"surchargeRate": "1.25",
+							"surchargeForAdults": "10.04",
+							"surchargeForYoungAdults": 0,
+							"surchargeForChildren": 0,
+							"surchargeForInfants": 0,
+							"surchargeCapPerPassenger": {
+								"currency": "GBP",
+								"amount": "30"
+							}
+						},
+						{
+							"type": "Prepaid",
+							"usage": "Corporate"
+						},
+						{
+							"type": "Prepaid",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Credit",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Debit",
+							"usage": "Corporate"
+						},
+						{
+							"type": "Debit",
+							"usage": "Consumer"
+						}
+					],
+					"schemeName": "American Express",
+					"schemeCode": "AX",
+					"pciSchemeCode": "AMX",
+					"type": "CREDIT_CARD"
+				},
+				{
+					"paymentFormFields": {
+						"fields": [
+							{
+								"name": "cardNumber",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 19,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "expiryDate",
+								"dataFormat": {
+									"minLength": 4,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 4,
+									"isConcealed": false,
+									"validationPattern": "^(0[1-9]|1[0-2]){1}([0-9]{2})$"
+								}
+							},
+							{
+								"name": "CVV",
+								"dataFormat": {
+									"minLength": 3,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 3,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "approvalCodeManual",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": false,
+									"maxLength": 8,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "freeTextReportedAndPrinted",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": false,
+									"maxLength": 20,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "nameOnCard",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 99,
+									"isConcealed": false
+								}
+							}
+						]
+					},
+					"schemeOptions": [
+						{
+							"type": "Debit",
+							"usage": "Corporate"
+						},
+						{
+							"type": "Debit",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Credit",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Credit",
+							"usage": "Corporate",
+							"surcharge": "8.83",
+							"surchargeRate": "1.1",
+							"surchargeForAdults": "8.83",
+							"surchargeForYoungAdults": 0,
+							"surchargeForChildren": 0,
+							"surchargeForInfants": 0,
+							"surchargeCapPerPassenger": {
+								"currency": "GBP",
+								"amount": "30"
+							}
+						},
+						{
+							"type": "Prepaid",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Prepaid",
+							"usage": "Corporate"
+						}
+					],
+					"schemeName": "Mastercard",
+					"schemeCode": "CA",
+					"pciSchemeCode": "ECA",
+					"type": "CREDIT_CARD"
+				},
+				{
+					"paymentFormFields": {
+						"fields": [
+							{
+								"name": "cardNumber",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 19,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "expiryDate",
+								"dataFormat": {
+									"minLength": 4,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 4,
+									"isConcealed": false,
+									"validationPattern": "^(0[1-9]|1[0-2]){1}([0-9]{2})$"
+								}
+							},
+							{
+								"name": "CVV",
+								"dataFormat": {
+									"minLength": 3,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 3,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "approvalCodeManual",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": false,
+									"maxLength": 8,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "freeTextReportedAndPrinted",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": false,
+									"maxLength": 20,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "nameOnCard",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 99,
+									"isConcealed": false
+								}
+							}
+						]
+					},
+					"schemeOptions": [
+						{
+							"type": "Credit",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Credit",
+							"usage": "Corporate",
+							"surcharge": "12.04",
+							"surchargeRate": "1.5",
+							"surchargeForAdults": "12.04",
+							"surchargeForYoungAdults": 0,
+							"surchargeForChildren": 0,
+							"surchargeForInfants": 0,
+							"surchargeCapPerPassenger": {
+								"currency": "GBP",
+								"amount": "30"
+							}
+						},
+						{
+							"type": "Debit",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Debit",
+							"usage": "Corporate"
+						},
+						{
+							"type": "Prepaid",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Prepaid",
+							"usage": "Corporate"
+						}
+					],
+					"schemeName": "Diners Club",
+					"schemeCode": "DC",
+					"pciSchemeCode": "DIN",
+					"type": "CREDIT_CARD"
+				},
+				{
+					"paymentFormFields": {
+						"fields": [
+							{
+								"name": "cardNumber",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 19,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "expiryDate",
+								"dataFormat": {
+									"minLength": 4,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 4,
+									"isConcealed": false,
+									"validationPattern": "^(0[1-9]|1[0-2]){1}([0-9]{2})$"
+								}
+							},
+							{
+								"name": "CVV",
+								"dataFormat": {
+									"minLength": 3,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 3,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "approvalCodeManual",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": false,
+									"maxLength": 8,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "freeTextReportedAndPrinted",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": false,
+									"maxLength": 20,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "nameOnCard",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 99,
+									"isConcealed": false
+								}
+							}
+						]
+					},
+					"schemeOptions": [
+						{
+							"type": "Prepaid",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Prepaid",
+							"usage": "Corporate"
+						},
+						{
+							"type": "Debit",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Debit",
+							"usage": "Corporate"
+						}
+					],
+					"schemeName": "Switch/Maestro",
+					"schemeCode": "SW",
+					"pciSchemeCode": "MAU",
+					"type": "CREDIT_CARD"
+				},
+				{
+					"paymentFormFields": {
+						"fields": [
+							{
+								"name": "cardNumber",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 19,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "expiryDate",
+								"dataFormat": {
+									"minLength": 4,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 4,
+									"isConcealed": false,
+									"validationPattern": "^(0[1-9]|1[0-2]){1}([0-9]{2})$"
+								}
+							},
+							{
+								"name": "CVV",
+								"dataFormat": {
+									"minLength": 3,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 3,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "approvalCodeManual",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": false,
+									"maxLength": 8,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "freeTextReportedAndPrinted",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": false,
+									"maxLength": 20,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "nameOnCard",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 99,
+									"isConcealed": false
+								}
+							}
+						]
+					},
+					"schemeOptions": [
+						{
+							"type": "Credit",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Credit",
+							"usage": "Corporate",
+							"surcharge": "12.04",
+							"surchargeRate": "1.5",
+							"surchargeForAdults": "12.04",
+							"surchargeForYoungAdults": 0,
+							"surchargeForChildren": 0,
+							"surchargeForInfants": 0,
+							"surchargeCapPerPassenger": {
+								"currency": "GBP",
+								"amount": "30"
+							}
+						},
+						{
+							"type": "Debit",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Debit",
+							"usage": "Corporate"
+						},
+						{
+							"type": "Prepaid",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Prepaid",
+							"usage": "Corporate"
+						}
+					],
+					"schemeName": "Discover",
+					"schemeCode": "DS",
+					"pciSchemeCode": "DIS",
+					"type": "CREDIT_CARD"
+				},
+				{
+					"paymentFormFields": {
+						"fields": [
+							{
+								"name": "cardNumber",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 19,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "expiryDate",
+								"dataFormat": {
+									"minLength": 4,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 4,
+									"isConcealed": false,
+									"validationPattern": "^(0[1-9]|1[0-2]){1}([0-9]{2})$"
+								}
+							},
+							{
+								"name": "approvalCodeManual",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": false,
+									"maxLength": 8,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "freeTextReportedAndPrinted",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": false,
+									"maxLength": 20,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "nameOnCard",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 99,
+									"isConcealed": false
+								}
+							}
+						]
+					},
+					"schemeOptions": [
+						{
+							"type": "Credit",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Credit",
+							"usage": "Corporate",
+							"surcharge": "14.05",
+							"surchargeRate": "1.75",
+							"surchargeForAdults": "14.05",
+							"surchargeForYoungAdults": 0,
+							"surchargeForChildren": 0,
+							"surchargeForInfants": 0,
+							"surchargeCapPerPassenger": {
+								"currency": "GBP",
+								"amount": "30"
+							}
+						},
+						{
+							"type": "Debit",
+							"usage": "Corporate",
+							"surcharge": "14.05",
+							"surchargeRate": "1.75",
+							"surchargeForAdults": "14.05",
+							"surchargeForYoungAdults": 0,
+							"surchargeForChildren": 0,
+							"surchargeForInfants": 0,
+							"surchargeCapPerPassenger": {
+								"currency": "GBP",
+								"amount": "30"
+							}
+						},
+						{
+							"type": "Debit",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Prepaid",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Prepaid",
+							"usage": "Corporate",
+							"surcharge": "14.05",
+							"surchargeRate": "1.75",
+							"surchargeForAdults": "14.05",
+							"surchargeForYoungAdults": 0,
+							"surchargeForChildren": 0,
+							"surchargeForInfants": 0,
+							"surchargeCapPerPassenger": {
+								"currency": "GBP",
+								"amount": "30"
+							}
+						}
+					],
+					"schemeName": "Airplus/Uatp",
+					"schemeCode": "TP",
+					"pciSchemeCode": "UAP",
+					"type": "CREDIT_CARD"
+				},
+				{
+					"paymentFormFields": {
+						"fields": [
+							{
+								"name": "cardNumber",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 19,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "expiryDate",
+								"dataFormat": {
+									"minLength": 4,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 4,
+									"isConcealed": false,
+									"validationPattern": "^(0[1-9]|1[0-2]){1}([0-9]{2})$"
+								}
+							},
+							{
+								"name": "CVV",
+								"dataFormat": {
+									"minLength": 3,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 3,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "approvalCodeManual",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": false,
+									"maxLength": 8,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "freeTextReportedAndPrinted",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": false,
+									"maxLength": 20,
+									"isConcealed": false
+								}
+							},
+							{
+								"name": "nameOnCard",
+								"dataFormat": {
+									"minLength": 1,
+									"dataType": "STRING",
+									"isMandatory": true,
+									"maxLength": 99,
+									"isConcealed": false
+								}
+							}
+						]
+					},
+					"schemeOptions": [
+						{
+							"type": "Debit",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Credit",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Credit",
+							"usage": "Corporate",
+							"surcharge": "16.06",
+							"surchargeRate": "2",
+							"surchargeForAdults": "16.06",
+							"surchargeForYoungAdults": 0,
+							"surchargeForChildren": 0,
+							"surchargeForInfants": 0,
+							"surchargeCapPerPassenger": {
+								"currency": "GBP",
+								"amount": "30"
+							}
+						},
+						{
+							"type": "Debit",
+							"usage": "Corporate"
+						},
+						{
+							"type": "Prepaid",
+							"usage": "Consumer"
+						},
+						{
+							"type": "Prepaid",
+							"usage": "Corporate"
+						}
+					],
+					"schemeName": "Visa",
+					"schemeCode": "VI",
+					"pciSchemeCode": "VIS",
+					"type": "CREDIT_CARD"
+				}
+			],
+			"amop": {}
+		},
+		"threeDSecure": {
+			"jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0ZTZjOGNlNS05Y2U5LTQwNDQtOTFlOC1kZmM2ZDUwZjljNzEiLCJpc3MiOiI2NDQyYTViZjJhNDAyYTYxZjc3NTIzODUiLCJpYXQiOjE3NDI1NjI3NjUsImV4cCI6MTc0MjU2MzM2NSwicmVmZXJlbmNlSWQiOiJjY2YzZmQ1Yy1kOTI1LTRhNDAtZGVkMy02ODlkM2RkZWM1YzkiLCJPcmdVbml0SWQiOiI2NDQyYTViZTIyNTkwNjFkMDYzYmVhM2IifQ.K1k5PFlLEBYvB1u2fTaw97I2dL_eJP-GeahJT1ralpA"
+		},
+		"billingCountries": {
+			"defaultBillingCountry": "GB",
+			"billingCountries": [
+				{
+					"countryName": "Afghanistan",
+					"countryCode": "AF"
+				},
+				{
+					"countryName": "Albania",
+					"countryCode": "AL"
+				},
+				{
+					"countryName": "Algeria",
+					"countryCode": "DZ"
+				},
+				{
+					"countryName": "American Samoa",
+					"countryCode": "AS"
+				},
+				{
+					"countryName": "Andorra",
+					"countryCode": "AD"
+				},
+				{
+					"countryName": "Angola",
+					"countryCode": "AO"
+				},
+				{
+					"countryName": "Anguilla",
+					"countryCode": "AI"
+				},
+				{
+					"countryName": "Antigua",
+					"countryCode": "AG"
+				},
+				{
+					"countryName": "Argentina",
+					"countryCode": "AR"
+				},
+				{
+					"countryName": "Armenia",
+					"countryCode": "AM"
+				},
+				{
+					"countryName": "Aruba",
+					"countryCode": "AW"
+				},
+				{
+					"countryName": "Australia",
+					"countryCode": "AU"
+				},
+				{
+					"countryName": "Austria",
+					"countryCode": "AT"
+				},
+				{
+					"countryName": "Azerbaijan",
+					"countryCode": "AZ"
+				},
+				{
+					"countryName": "BRAZIL",
+					"countryCode": "BR"
+				},
+				{
+					"countryName": "Bahamas",
+					"countryCode": "BS"
+				},
+				{
+					"countryName": "Bahrain",
+					"countryCode": "BH"
+				},
+				{
+					"countryName": "Bangladesh",
+					"countryCode": "BD"
+				},
+				{
+					"countryName": "Barbados",
+					"countryCode": "BB"
+				},
+				{
+					"countryName": "Belarus",
+					"countryCode": "BY"
+				},
+				{
+					"countryName": "Belgium",
+					"countryCode": "BE"
+				},
+				{
+					"countryName": "Belize",
+					"countryCode": "BZ"
+				},
+				{
+					"countryName": "Benin Republic",
+					"countryCode": "BJ"
+				},
+				{
+					"countryName": "Bermuda",
+					"countryCode": "BM"
+				},
+				{
+					"countryName": "Bhutan",
+					"countryCode": "BT"
+				},
+				{
+					"countryName": "Bolivia",
+					"countryCode": "BO"
+				},
+				{
+					"countryName": "Bonaire, Saint Eustatius and Saba",
+					"countryCode": "BQ"
+				},
+				{
+					"countryName": "Bosnia-Herzegovina",
+					"countryCode": "BA"
+				},
+				{
+					"countryName": "Botswana",
+					"countryCode": "BW"
+				},
+				{
+					"countryName": "Bouvet Island",
+					"countryCode": "BV"
+				},
+				{
+					"countryName": "British Indian Ocean Territory",
+					"countryCode": "IO"
+				},
+				{
+					"countryName": "British Virgin Islands",
+					"countryCode": "VG"
+				},
+				{
+					"countryName": "Brunei",
+					"countryCode": "BN"
+				},
+				{
+					"countryName": "Bulgaria",
+					"countryCode": "BG"
+				},
+				{
+					"countryName": "Burkina Faso",
+					"countryCode": "BF"
+				},
+				{
+					"countryName": "Burundi",
+					"countryCode": "BI"
+				},
+				{
+					"countryName": "Cambodia",
+					"countryCode": "KH"
+				},
+				{
+					"countryName": "Canada",
+					"countryCode": "CA"
+				},
+				{
+					"countryName": "Cape Verde",
+					"countryCode": "CV"
+				},
+				{
+					"countryName": "Cayman Islands",
+					"countryCode": "KY"
+				},
+				{
+					"countryName": "Central African Rep",
+					"countryCode": "CF"
+				},
+				{
+					"countryName": "Chad",
+					"countryCode": "TD"
+				},
+				{
+					"countryName": "Chile",
+					"countryCode": "CL"
+				},
+				{
+					"countryName": "China",
+					"countryCode": "CN"
+				},
+				{
+					"countryName": "Christmas Island",
+					"countryCode": "CX"
+				},
+				{
+					"countryName": "Cocos Islands",
+					"countryCode": "CC"
+				},
+				{
+					"countryName": "Colombia",
+					"countryCode": "CO"
+				},
+				{
+					"countryName": "Comoros",
+					"countryCode": "KM"
+				},
+				{
+					"countryName": "Cook Islands",
+					"countryCode": "CK"
+				},
+				{
+					"countryName": "Costa Rica",
+					"countryCode": "CR"
+				},
+				{
+					"countryName": "Croatia",
+					"countryCode": "HR"
+				},
+				{
+					"countryName": "Cuba",
+					"countryCode": "CU"
+				},
+				{
+					"countryName": "Curacao",
+					"countryCode": "CW"
+				},
+				{
+					"countryName": "Cyprus",
+					"countryCode": "CY"
+				},
+				{
+					"countryName": "Czech Republic",
+					"countryCode": "CZ"
+				},
+				{
+					"countryName": "Democratic Republic of Congo",
+					"countryCode": "CD"
+				},
+				{
+					"countryName": "Denmark",
+					"countryCode": "DK"
+				},
+				{
+					"countryName": "Djibouti",
+					"countryCode": "DJ"
+				},
+				{
+					"countryName": "Dominica",
+					"countryCode": "DM"
+				},
+				{
+					"countryName": "Dominican Rep",
+					"countryCode": "DO"
+				},
+				{
+					"countryName": "Ecuador",
+					"countryCode": "EC"
+				},
+				{
+					"countryName": "Egypt",
+					"countryCode": "EG"
+				},
+				{
+					"countryName": "El Salvador",
+					"countryCode": "SV"
+				},
+				{
+					"countryName": "Equatorial Guinea",
+					"countryCode": "GQ"
+				},
+				{
+					"countryName": "Eritrea",
+					"countryCode": "ER"
+				},
+				{
+					"countryName": "Estonia",
+					"countryCode": "EE"
+				},
+				{
+					"countryName": "Eswatini",
+					"countryCode": "SZ"
+				},
+				{
+					"countryName": "Ethiopia",
+					"countryCode": "ET"
+				},
+				{
+					"countryName": "Falkland Is",
+					"countryCode": "FK"
+				},
+				{
+					"countryName": "Faroe Island",
+					"countryCode": "FO"
+				},
+				{
+					"countryName": "Fiji",
+					"countryCode": "FJ"
+				},
+				{
+					"countryName": "Finland",
+					"countryCode": "FI"
+				},
+				{
+					"countryName": "France",
+					"countryCode": "FR"
+				},
+				{
+					"countryName": "French Guyana",
+					"countryCode": "GF"
+				},
+				{
+					"countryName": "French Polynesia",
+					"countryCode": "PF"
+				},
+				{
+					"countryName": "French Southern Territories",
+					"countryCode": "TF"
+				},
+				{
+					"countryName": "Gabon",
+					"countryCode": "GA"
+				},
+				{
+					"countryName": "Gambia",
+					"countryCode": "GM"
+				},
+				{
+					"countryName": "Georgia",
+					"countryCode": "GE"
+				},
+				{
+					"countryName": "Germany",
+					"countryCode": "DE"
+				},
+				{
+					"countryName": "Ghana",
+					"countryCode": "GH"
+				},
+				{
+					"countryName": "Gibraltar (UK)",
+					"countryCode": "GI"
+				},
+				{
+					"countryName": "Greece",
+					"countryCode": "GR"
+				},
+				{
+					"countryName": "Greenland",
+					"countryCode": "GL"
+				},
+				{
+					"countryName": "Grenada",
+					"countryCode": "GD"
+				},
+				{
+					"countryName": "Guadeloupe",
+					"countryCode": "GP"
+				},
+				{
+					"countryName": "Guam",
+					"countryCode": "GU"
+				},
+				{
+					"countryName": "Guatemala",
+					"countryCode": "GT"
+				},
+				{
+					"countryName": "Guinea",
+					"countryCode": "GN"
+				},
+				{
+					"countryName": "Guinea Bissau",
+					"countryCode": "GW"
+				},
+				{
+					"countryName": "Guyana",
+					"countryCode": "GY"
+				},
+				{
+					"countryName": "Haiti",
+					"countryCode": "HT"
+				},
+				{
+					"countryName": "Honduras",
+					"countryCode": "HN"
+				},
+				{
+					"countryName": "Hong Kong - SAR of China",
+					"countryCode": "HK"
+				},
+				{
+					"countryName": "Hungary",
+					"countryCode": "HU"
+				},
+				{
+					"countryName": "Iceland",
+					"countryCode": "IS"
+				},
+				{
+					"countryName": "India",
+					"countryCode": "IN"
+				},
+				{
+					"countryName": "Indonesia",
+					"countryCode": "ID"
+				},
+				{
+					"countryName": "Iran",
+					"countryCode": "IR"
+				},
+				{
+					"countryName": "Iraq",
+					"countryCode": "IQ"
+				},
+				{
+					"countryName": "Ireland",
+					"countryCode": "IE"
+				},
+				{
+					"countryName": "Israel",
+					"countryCode": "IL"
+				},
+				{
+					"countryName": "Italy",
+					"countryCode": "IT"
+				},
+				{
+					"countryName": "Ivory Coast",
+					"countryCode": "CI"
+				},
+				{
+					"countryName": "Jamaica",
+					"countryCode": "JM"
+				},
+				{
+					"countryName": "Japan",
+					"countryCode": "JP"
+				},
+				{
+					"countryName": "Jordan",
+					"countryCode": "JO"
+				},
+				{
+					"countryName": "Kazakhstan",
+					"countryCode": "KZ"
+				},
+				{
+					"countryName": "Kenya",
+					"countryCode": "KE"
+				},
+				{
+					"countryName": "Kiribati",
+					"countryCode": "KI"
+				},
+				{
+					"countryName": "Kosovo",
+					"countryCode": "XK"
+				},
+				{
+					"countryName": "Kuwait",
+					"countryCode": "KW"
+				},
+				{
+					"countryName": "Kyrgyzstan",
+					"countryCode": "KG"
+				},
+				{
+					"countryName": "LIBYA",
+					"countryCode": "LY"
+				},
+				{
+					"countryName": "Laos",
+					"countryCode": "LA"
+				},
+				{
+					"countryName": "Latvia",
+					"countryCode": "LV"
+				},
+				{
+					"countryName": "Lebanon",
+					"countryCode": "LB"
+				},
+				{
+					"countryName": "Lesotho",
+					"countryCode": "LS"
+				},
+				{
+					"countryName": "Liberia",
+					"countryCode": "LR"
+				},
+				{
+					"countryName": "Liechtenstein",
+					"countryCode": "LI"
+				},
+				{
+					"countryName": "Lithuania",
+					"countryCode": "LT"
+				},
+				{
+					"countryName": "Luxembourg",
+					"countryCode": "LU"
+				},
+				{
+					"countryName": "Macau - SAR of China",
+					"countryCode": "MO"
+				},
+				{
+					"countryName": "Madagascar",
+					"countryCode": "MG"
+				},
+				{
+					"countryName": "Malawi",
+					"countryCode": "MW"
+				},
+				{
+					"countryName": "Malaysia",
+					"countryCode": "MY"
+				},
+				{
+					"countryName": "Maldives",
+					"countryCode": "MV"
+				},
+				{
+					"countryName": "Mali",
+					"countryCode": "ML"
+				},
+				{
+					"countryName": "Malta",
+					"countryCode": "MT"
+				},
+				{
+					"countryName": "Marshall Islands",
+					"countryCode": "MH"
+				},
+				{
+					"countryName": "Martinique",
+					"countryCode": "MQ"
+				},
+				{
+					"countryName": "Mauritania",
+					"countryCode": "MR"
+				},
+				{
+					"countryName": "Mauritius",
+					"countryCode": "MU"
+				},
+				{
+					"countryName": "Mayotte",
+					"countryCode": "YT"
+				},
+				{
+					"countryName": "Mexico",
+					"countryCode": "MX"
+				},
+				{
+					"countryName": "Micronesia",
+					"countryCode": "FM"
+				},
+				{
+					"countryName": "Minor Island",
+					"countryCode": "UM"
+				},
+				{
+					"countryName": "Moldova",
+					"countryCode": "MD"
+				},
+				{
+					"countryName": "Monaco",
+					"countryCode": "MC"
+				},
+				{
+					"countryName": "Montenegro",
+					"countryCode": "ME"
+				},
+				{
+					"countryName": "Montserrat",
+					"countryCode": "MS"
+				},
+				{
+					"countryName": "Morocco",
+					"countryCode": "MA"
+				},
+				{
+					"countryName": "Mozambique",
+					"countryCode": "MZ"
+				},
+				{
+					"countryName": "Myanmar",
+					"countryCode": "MM"
+				},
+				{
+					"countryName": "Namibia",
+					"countryCode": "NA"
+				},
+				{
+					"countryName": "Nauru",
+					"countryCode": "NR"
+				},
+				{
+					"countryName": "Nepal",
+					"countryCode": "NP"
+				},
+				{
+					"countryName": "Netherland Antilles",
+					"countryCode": "AN"
+				},
+				{
+					"countryName": "Netherlands",
+					"countryCode": "NL"
+				},
+				{
+					"countryName": "New Caledonia",
+					"countryCode": "NC"
+				},
+				{
+					"countryName": "New Zealand",
+					"countryCode": "NZ"
+				},
+				{
+					"countryName": "Nicaragua",
+					"countryCode": "NI"
+				},
+				{
+					"countryName": "Niger",
+					"countryCode": "NE"
+				},
+				{
+					"countryName": "Nigeria",
+					"countryCode": "NG"
+				},
+				{
+					"countryName": "Niue",
+					"countryCode": "NU"
+				},
+				{
+					"countryName": "Norfolk Island",
+					"countryCode": "NF"
+				},
+				{
+					"countryName": "North Macedonia",
+					"countryCode": "MK"
+				},
+				{
+					"countryName": "Northern Mariana Islands",
+					"countryCode": "MP"
+				},
+				{
+					"countryName": "Norway",
+					"countryCode": "NO"
+				},
+				{
+					"countryName": "Oman",
+					"countryCode": "OM"
+				},
+				{
+					"countryName": "Pakistan",
+					"countryCode": "PK"
+				},
+				{
+					"countryName": "Palau",
+					"countryCode": "PW"
+				},
+				{
+					"countryName": "Panama",
+					"countryCode": "PA"
+				},
+				{
+					"countryName": "Papua New Guinea",
+					"countryCode": "PG"
+				},
+				{
+					"countryName": "Paraguay",
+					"countryCode": "PY"
+				},
+				{
+					"countryName": "Peoples Rep Korea",
+					"countryCode": "KP"
+				},
+				{
+					"countryName": "Peru",
+					"countryCode": "PE"
+				},
+				{
+					"countryName": "Philippines",
+					"countryCode": "PH"
+				},
+				{
+					"countryName": "Pitcairn",
+					"countryCode": "PN"
+				},
+				{
+					"countryName": "Poland",
+					"countryCode": "PL"
+				},
+				{
+					"countryName": "Portugal",
+					"countryCode": "PT"
+				},
+				{
+					"countryName": "Puerto Rico",
+					"countryCode": "PR"
+				},
+				{
+					"countryName": "Qatar",
+					"countryCode": "QA"
+				},
+				{
+					"countryName": "Republic Cameroon",
+					"countryCode": "CM"
+				},
+				{
+					"countryName": "Republic of Congo",
+					"countryCode": "CG"
+				},
+				{
+					"countryName": "Reunion",
+					"countryCode": "RE"
+				},
+				{
+					"countryName": "Romania",
+					"countryCode": "RO"
+				},
+				{
+					"countryName": "Russia",
+					"countryCode": "RU"
+				},
+				{
+					"countryName": "Rwanda",
+					"countryCode": "RW"
+				},
+				{
+					"countryName": "Saint Helena",
+					"countryCode": "SH"
+				},
+				{
+					"countryName": "Saint Maarten",
+					"countryCode": "SX"
+				},
+				{
+					"countryName": "Samoa",
+					"countryCode": "WS"
+				},
+				{
+					"countryName": "San Marino",
+					"countryCode": "SM"
+				},
+				{
+					"countryName": "Saudi Arabia",
+					"countryCode": "SA"
+				},
+				{
+					"countryName": "Senegal",
+					"countryCode": "SN"
+				},
+				{
+					"countryName": "Serbia",
+					"countryCode": "RS"
+				},
+				{
+					"countryName": "Seychelles",
+					"countryCode": "SC"
+				},
+				{
+					"countryName": "Sierra Leone",
+					"countryCode": "SL"
+				},
+				{
+					"countryName": "Singapore",
+					"countryCode": "SG"
+				},
+				{
+					"countryName": "Slovakia",
+					"countryCode": "SK"
+				},
+				{
+					"countryName": "Slovenia",
+					"countryCode": "SI"
+				},
+				{
+					"countryName": "Solomon Island",
+					"countryCode": "SB"
+				},
+				{
+					"countryName": "Somalia",
+					"countryCode": "SO"
+				},
+				{
+					"countryName": "South Africa",
+					"countryCode": "ZA"
+				},
+				{
+					"countryName": "South Korea",
+					"countryCode": "KR"
+				},
+				{
+					"countryName": "Spain",
+					"countryCode": "ES"
+				},
+				{
+					"countryName": "Sri Lanka",
+					"countryCode": "LK"
+				},
+				{
+					"countryName": "St Kitts and Nevis",
+					"countryCode": "KN"
+				},
+				{
+					"countryName": "St Lucia",
+					"countryCode": "LC"
+				},
+				{
+					"countryName": "St Vincent",
+					"countryCode": "VC"
+				},
+				{
+					"countryName": "Sudan",
+					"countryCode": "SD"
+				},
+				{
+					"countryName": "Suriname",
+					"countryCode": "SR"
+				},
+				{
+					"countryName": "Svalbard and Jan Mayen",
+					"countryCode": "SJ"
+				},
+				{
+					"countryName": "Sweden",
+					"countryCode": "SE"
+				},
+				{
+					"countryName": "Switzerland",
+					"countryCode": "CH"
+				},
+				{
+					"countryName": "Syria",
+					"countryCode": "SY"
+				},
+				{
+					"countryName": "São Tomé and Principe",
+					"countryCode": "ST"
+				},
+				{
+					"countryName": "Taiwan - China",
+					"countryCode": "TW"
+				},
+				{
+					"countryName": "Tajikistan",
+					"countryCode": "TJ"
+				},
+				{
+					"countryName": "Tanzania",
+					"countryCode": "TZ"
+				},
+				{
+					"countryName": "Thailand",
+					"countryCode": "TH"
+				},
+				{
+					"countryName": "Togo",
+					"countryCode": "TG"
+				},
+				{
+					"countryName": "Tokelau",
+					"countryCode": "TK"
+				},
+				{
+					"countryName": "Tonga",
+					"countryCode": "TO"
+				},
+				{
+					"countryName": "Trinidad and Tobago",
+					"countryCode": "TT"
+				},
+				{
+					"countryName": "Tunisia",
+					"countryCode": "TN"
+				},
+				{
+					"countryName": "Turkey",
+					"countryCode": "TR"
+				},
+				{
+					"countryName": "Turkmenistan",
+					"countryCode": "TM"
+				},
+				{
+					"countryName": "Turks Caicos",
+					"countryCode": "TC"
+				},
+				{
+					"countryName": "Tuvalu",
+					"countryCode": "TV"
+				},
+				{
+					"countryName": "US Virgin Islands",
+					"countryCode": "VI"
+				},
+				{
+					"countryName": "USA",
+					"countryCode": "US"
+				},
+				{
+					"countryName": "Uganda",
+					"countryCode": "UG"
+				},
+				{
+					"countryName": "Ukraine",
+					"countryCode": "UA"
+				},
+				{
+					"countryName": "United Arab Emirates",
+					"countryCode": "AE"
+				},
+				{
+					"countryName": "United Kingdom",
+					"countryCode": "GB"
+				},
+				{
+					"countryName": "Uruguay",
+					"countryCode": "UY"
+				},
+				{
+					"countryName": "Uzbekistan",
+					"countryCode": "UZ"
+				},
+				{
+					"countryName": "Vanuatu",
+					"countryCode": "VU"
+				},
+				{
+					"countryName": "Vatican City",
+					"countryCode": "VA"
+				},
+				{
+					"countryName": "Venezuela",
+					"countryCode": "VE"
+				},
+				{
+					"countryName": "Vietnam",
+					"countryCode": "VN"
+				},
+				{
+					"countryName": "Wallis and Futuna Islands",
+					"countryCode": "WF"
+				},
+				{
+					"countryName": "Western Sahara",
+					"countryCode": "EH"
+				},
+				{
+					"countryName": "Yemen Republic",
+					"countryCode": "YE"
+				},
+				{
+					"countryName": "Zambia",
+					"countryCode": "ZM"
+				},
+				{
+					"countryName": "Zimbabwe",
+					"countryCode": "ZW"
+				}
+			]
+		},
+		"billingAddressInformation": {
+			"billingAddressRequirements": {
+				"mandatoryFields": [
+					"AddressLine1",
+					"Country"
+				],
+				"optionalFields": [
+					"AddressLine2",
+					"AddressLine3",
+					"PostalCode"
+				]
+			},
+			"billingAddressSample": {
+				"line1": "12 Beech Road",
+				"line2": "Hounslow",
+				"line3": "Middlesex",
+				"billingCountry": "GB",
+				"postalCode": "TW6 2JA"
+			}
+		}
+	}
+}

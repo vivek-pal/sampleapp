@@ -1,0 +1,85 @@
+{
+    "agentInteractionDetails": {
+        "userID": "n507945",
+        "genesysAgentStatus": "TRUE",
+        "agentLiveCallStatus": "TRUE",
+        "dtReturnValue": 1,
+        "agentLiveCallDetails": {
+            "connectionID": "",
+            "directoryNumber": "",
+            "semafoneDetails": {
+                "clientRef": "ec2dd584-9f63-4ca0-8c74-31abfbcc2d34",
+                "tenantId": "A",
+                "clientId": "2",
+                "accountId": "702",
+                "principle": "CustomerWeb",
+                "licencecode": "nZm27GrPQ3K6Dibc9j4i",
+                "semafoneMode": "MANUAL_CR",
+                "domainURL": "https://iag2.securecontact.bt.com/semafone/service/capture/"
+            },
+            "additionalData": []
+        }
+    },
+    "paymentData": {
+        "PaymentRequest": {
+            "_": "a",
+            "InterfaceVersion": "V1",
+            "Audience": "BA_Agent",
+            "AgentCredentials": {
+                "OfficeID": "NCLBA08SU",
+                "AgentID": "MR"
+            },
+            "LanguageCode": "EN",
+            "RevenueType": "NONREVENUE",
+            "SaleType": "NonRevenue",
+            "CountryOfResidence": "GB",
+            "PointOfSaleCountry": "GB",
+            "BookingTransactionType": "New",
+            "CallingApplication": "PEGPAY",
+            "PegasusCardDetails": {
+                "CollectCardDataOnly": "true",
+                "CollectExpiryDate": "true",
+                "CollectCvvData": "true",
+                "BookingReference": "005PNR"
+            }
+        }
+    },
+    "pageType": "CDC",
+    "cvvStatus": "NOT_FOUND",
+    "schemeOptions": {
+        "schemeOptions": [
+            {
+                "schemeName": "Visa",
+                "schemeCode": "VI"
+            },
+            {
+                "schemeName": "Amex",
+                "schemeCode": "AX"
+            },
+            {
+                "schemeName": "Diners",
+                "schemeCode": "DC"
+            },
+            {
+                "schemeName": "MasterCard",
+                "schemeCode": "CA"
+            },
+            {
+                "schemeName": "Universal Travel Plan",
+                "schemeCode": "TP"
+            },
+            {
+                "schemeName": "Switch",
+                "schemeCode": "SW"
+            },
+            {
+                "schemeName": "Visa Debit/Delta",
+                "schemeCode": "VD"
+            },
+            {
+                "schemeName": "Discover",
+                "schemeCode": "AX"
+            }
+        ]
+    }
+}

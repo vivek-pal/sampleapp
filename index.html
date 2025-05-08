@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-itunes-app" content="app-id=284793089">
+
+    <!-- <script type="text/javascript">
+			var trackingInfo = new Array(),
+			tagManTrackingInfo = {};
+			var vsHardCodedName = "functional/payment/xslt/resp/pegasusCardDetailBrowser.xslt";
+			var homeServer = "null";
+			trackingInfo["GGLMember"] = "false";
+			function assignStandardTagManParams() {
+				"use strict";
+
+				tagManTrackingInfo.page_name = "PEGASUS_PAYMENT";
+				tagManTrackingInfo.page_country_code = "GB";
+				tagManTrackingInfo.page_language_code = "EN";
+				tagManTrackingInfo.platform = "DESKTOP";
+				tagManTrackingInfo.device = "Unknown";
+			}
+
+			assignStandardTagManParams();
+		</script> -->
+    <meta name="description" content="Payment page to collect payment card details for bookings with British Airways." />
+		<meta name="keywords" content="Payment, total amount to pay, payment card details collection." />
+
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Payment Page - British Airways</title>
+
+    <meta property="og:title" content="Card details capture - British Airways" />
+    <meta property="og:image" content="/cms/global/assets/images/site/brands_logo_images/facebookDefault.png" />
+	<!-- Debug Finished title -->
+		<style>
+      @font-face {
+        font-family: 'BA-Icon-Font';
+        src: url('./src/assets/fonts/BA-Icon-Font.eot?v=2.11');
+        src: url('./src/assets/fonts/BA-Icon-Font.eot?#iefix?v=2.11') format('embedded-opentype'),
+        url('./src/assets/fonts/BA-Icon-Font.woff?v=2.11') format('woff'),
+        url('./src/assets/fonts/BA-Icon-Font.ttf?v=2.11') format('truetype'),
+        url('./src/assets/fonts/BA-Icon-Font.svg#BA-Icon-Font?v=2.11') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family:'MyliusModernBold';
+        src:url('./src/assets/fonts/mylius-Modern-bd.eot');
+        src:url('./src/assets/fonts/mylius-Modern-bd.eot?#iefix') format('embedded-opentype'),
+          url('./src/assets/fonts/mylius-Modern-bd.woff') format('woff'),
+          url('./src/assets/fonts/mylius-Modern-bd.ttf') format('truetype'),
+          url('./src/assets/fonts/mylius-Modern-bd.svg#MyliusModernBold') format('svg');
+        font-weight:normal;
+        font-style:normal;
+      }
+
+      @font-face {
+        font-family:'MyliusModernRegular';
+        src:url('./src/assets/fonts/mylius-Modern-reg.eot');
+        src:url('./src/assets/fonts/mylius-Modern-reg.eot?#iefix') format('embedded-opentype'),
+          url('./src/assets/fonts/mylius-Modern-reg.woff') format('woff'),
+          url('./src/assets/fonts/mylius-Modern-reg.ttf') format('truetype'),
+          url('./src/assets/fonts/mylius-Modern-reg.svg#MyliusModernRegular') format('svg');
+        font-weight:normal;
+        font-style:normal;
+      }
+
+      @font-face {
+        font-family:'MyliusModernLight';
+        src:url('./src/assets/fonts/mylius-Modern-lt.eot');
+        src:url('./src/assets/fonts/mylius-Modern-lt.eot?#iefix') format('embedded-opentype'),
+          url('./src/assets/fonts/mylius-Modern-lt.woff') format('woff'),
+          url('./src/assets/fonts/mylius-Modern-lt.ttf') format('truetype'),
+          url('./src/assets/fonts/mylius-Modern-lt.svg#MyliusModernLight') format('svg');
+        font-weight:normal;
+        font-style:normal;
+      }
+
+      @font-face {
+        font-family:'MyliusModernExtLight';
+        src:url('./src/assets/fonts/mylius-modern-extlig.eot');
+        src:url('./src/assets/fonts/mylius-modern-extlig.eot?#iefix') format('embedded-opentype'),
+          url('./src/assets/fonts/mylius-modern-extlig.woff') format('woff'),
+          url('./src/assets/fonts/mylius-modern-extlig.ttf') format('truetype');
+        font-weight:normal;
+        font-style:normal;
+      }
+
+      
+      @font-face {
+        font-family: 'OpenSans';
+        src: url('./src/assets/fonts/open-sans-v15-latin-regular.eot');
+        src: url('./src/assets/fonts/open-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'),
+          url('./src/assets/fonts/open-sans-v15-latin-regular.woff') format('woff'),
+          url('./src/assets/fonts/open-sans-v15-latin-regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'OpenSansLight';
+        src: url('./src/assets/fonts/open-sans-v15-latin-300.eot');
+        src: url('./src/assets/fonts/open-sans-v15-latin-300.eot?#iefix') format('embedded-opentype'),
+          url('./src/assets/fonts/open-sans-v15-latin-300.woff') format('woff'),
+          url('./src/assets/fonts/open-sans-v15-latin-300.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face{
+        font-family:'responsive-ba-icon-fonts';
+        src:url('/assets/fonts/responsive-ba-icon-fonts.eot?v=2.11');
+        src:url('/assets/fonts/responsive-ba-icon-fonts.eot?#iefix?v=2.11') format('embedded-opentype'),
+            url('/assets/fonts/responsive-ba-icon-fonts.woff?v=2.11') format('woff'),
+            url('/assets/fonts/responsive-ba-icon-fonts.ttf?v=2.11') format('truetype'),
+            url('/assets/fonts/responsive-ba-icon-fonts#BAIconFont?v=2.11') format('svg');
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <!-- First the core spin.js -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script> -->
+    <script src="./src/assets/js/jquery.spin-1.3.2.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+/* === Error Container === */
+  
+  /* === Message Styles === */
+  .message {
+    background: #F2F2F2;
+    margin: 3.6rem 0;
+    padding: 3.6rem 1.8rem;
+    position: relative;
+  }
+  
+  .message.warning {
+    border-bottom: 0.4rem solid #CC0000;
+    padding-left: 1.9rem;
+    position: relative;
+    padding-left: 4.1rem;
+  }
+  
+  /* === Responsive Message Padding === */
+  @media only screen and (min-width: 641px) {
+    .message {
+      padding: 3.6rem 2.4rem;
+    }
+  
+    .message.warning,
+    .message.tick {
+      padding-left: 6.4rem;
+    }
+  }
+  
+  @media only screen and (min-width: 800px) {
+    .message.warning,
+    .message.tick {
+      padding-left: 8.4rem;
+    }
+  }
+  
+  .warning-icon {
+    width: 2.7rem;
+    height: 2.7rem;
+    flex-shrink: 0;
+  }
+  
+  /* === Heading Styles (Consistent Spacing & Colors) === */
+  .message.warning h1,
+  .message.warning h2,
+  .message.warning h3,
+  .message.warning h4,
+  .message.warning h5,
+  .message.warning h6,
+  .message.warning .warning-icon p:first-child {
+    color: #CC0000;
+    position: relative;
+    padding-left: 4.1rem;
+    width: auto;
+  }
+ 
+
+@media only screen and (max-width: 600px) {
+    .message.warning ul {
+        margin-top: 5rem; /* Adds space between heading and list */
+        padding-left: 4rem; /* Optional: Ensures list items are indented */
+    }
+  }
+  
+  @media only screen and (min-width: 641px) {
+    .message.warning h1,
+    .message.warning h2,
+    .message.warning h3,
+    .message.warning h4,
+    .message.warning h5,
+    .message.warning h6,
+    .message.warning .warning-icon p:first-child {
+      padding-left: 0;
+      color: #CC0000;
+      width: 100%;
+    }
+
+    .listMsg{
+        margin-left: -15px !important;
+    }
+
+}
+
